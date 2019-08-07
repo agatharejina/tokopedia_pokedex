@@ -1,0 +1,110 @@
+@import '../../assets/colors/Colors.module.scss';
+.page {
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.backBtn {
+    font-size: 40px;
+    color: #FFC91A;
+    padding: 10px 0px 0 10px;
+}
+
+.pokeInfo {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 170px;
+}
+
+.inputNickname {
+    padding: 5px;
+    border: 1px solid #E9E9E9;
+    margin-top: 10px;
+}
+
+.catchBtn {
+    background: $primaryColor;
+    width: 100px;
+    text-align: center;
+    border-radius: 50px;
+    padding: 5px 0 5px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    box-shadow: 0px 3px 8px 1px #E9e9e9;
+    margin-top: 15px;
+}
+
+.pokeName {
+    font-family: 'QuickSand', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.pokeInfoCatContainer {
+    margin-top: 30px;
+}
+
+.pokeInfoCatTitle{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pokeInfoCatContent {
+    padding-top: 20px;
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'QuickSand', sans-serif;
+    font-weight: 500;
+}
+
+.pokeInfoCatContent > div {
+    padding: 5px;
+}
+
+.menuStyle {
+    font-family: 'QuickSand', sans-serif;
+    font-size: 20px;
+}
+
+.activeMenuStyle {
+    font-family: 'QuickSand', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+    .page {
+        padding-top: 0px;
+    }
+    
+    .pokeInfoCatContent {
+        grid-template-columns: 25% 25% 25% 25%;
+        padding-top: 50px;
+    }
+
+    .pokeInfoCatContent > div {
+        padding: 10px;
+    }
+
+    .backBtn {
+        padding: 50px 0px 0 10px;
+    }
+}

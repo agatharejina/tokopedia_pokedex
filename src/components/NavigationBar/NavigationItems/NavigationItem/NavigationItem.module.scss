@@ -1,0 +1,17 @@
+.navigationItem{
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+.navigationItem > a{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    font-family: 'QuickSand', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.mobileStyles{
+    display: none;
+}

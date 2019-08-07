@@ -1,0 +1,73 @@
+@import '../../../assets/colors/Colors.module.scss';
+
+.modal{
+    z-index: 1;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.modalContainer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.closeContainer {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    background: #ffd41c;
+    padding: 5px;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.desc {
+    font-size: 20px;
+    font-family: 'QuickSand', sans-serif;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.btnContainer {
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+
+.btn {
+    text-align: center;
+    margin: auto;
+    background: $primaryColor;
+    width: 120px;
+    border-radius: 50px;
+    padding: 6px 0 6px 0;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    box-shadow: 0px 3px 8px 1px #E9e9e9;
+}
+
+.btnDist {
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .modalContainer {
+        width: 20%;
+    }
+}

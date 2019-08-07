@@ -1,0 +1,40 @@
+@import '../../assets/colors/Colors.module.scss';
+
+.page{
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.totalPokeCaught{
+    font-family: 'QuickSand', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.listContainer{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 20px;
+}
+
+.uncaughtPokeContent{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    font-family: 'QuickSand', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .listContainer {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}

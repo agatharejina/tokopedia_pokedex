@@ -1,0 +1,41 @@
+@import '../../../assets/colors/Colors.module.scss';
+
+.sideBar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    background-color: $primaryColor;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    transition: width .5s ease-in;
+}
+
+.hidden {
+    display: none;
+}
+
+.closeContainer {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.logoLinkContainer {
+    margin-top: 50px;
+}
+
+.logo {
+    background-image: url('../../../assets/images/pokemon-logo.png');
+    background-size: contain;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+
+@media screen and (min-width: 768px){
+    .sideBar {
+        position: fixed;
+    }
+}
